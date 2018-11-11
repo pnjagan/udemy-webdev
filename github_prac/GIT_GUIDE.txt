@@ -164,5 +164,12 @@ then push it back to server
 then let git_fun pull the latest data:
 ---------------
 CONFLICT resolved
+-------------
+
+NOTE: when create a new REPO , best approach is
+
+1.create empty rep in server
+2.init the local folder , point to remote folder , add files in local , commit in local and then push it upto server.
+(pushing without adding or committing 
  
  
