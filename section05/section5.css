@@ -1,0 +1,297 @@
+/*###default############*/
+nav , header , footer {
+    display :block; /* these three are main sections of our page*/
+}
+
+body {
+    line-height: 1rem; /* all text is same size */
+    margin :0px; /*all text is sequenced out*/
+}
+
+label {
+/*    font-size: 2rem;*/
+    font-weight: 600; /*bold is something like 300 */
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+button {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: deepskyblue;
+    border-radius: 7px;
+    padding :2px 5px;
+    text-align: center;
+}
+
+button.learnmore {
+ display: block;
+ margin :auto;
+}
+
+article p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    padding :10px;
+    
+}
+
+* {
+    box-sizing: border-box;
+} /*considers the size of the component to be the size of the outer border*/
+/*###########Nav bar#########*/
+
+nav {
+    width :100%; /*fill the width*/
+    margin :0; /*all sequeced*/
+}
+
+nav ul {
+    background-color: #eee;
+    overflow :hidden; /*to avoid scrolling*/
+    margin :0; /*all squece  */
+    padding :0; /*all squece */
+}
+
+ul.topnav li {
+    list-style: none; /*removes the bullets*/
+    float :left; /* will float to the left , overriding the default behavior of list items*/
+}
+
+ul.topnav li.topnav-right {
+    float :right;  /* will float to the left , overriding the default behavior of list items and previous stylesheet */
+}
+
+ul.topnav li a {
+    text-decoration: none;/*remove underline*/
+    
+   display: block; /*  it is easier to position - let them take full width of the container - li
+    also block adds a new line before after the element. once we remove it , it collapses
+    */
+    
+    min-height: 16px;/*dont make it less , its a nav bar , it shd be easy to click*/
+    text-align: right;    /*has no effect in DT(desktop) mode , in Mobile device mode , its overridden to LEFT */
+    padding :14px;/*some space around*/
+    text-transform: uppercase;
+    color :#666;
+/*
+    border-width: 1px;
+    border-style: solid;
+*/
+}
+
+/* : adds a action*/
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color :#fff;
+}
+
+ul.topnav li.dropdownIcon {
+    display :none;
+}
+
+.container {
+    width :100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row{
+    width :100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*############Custom styles########*/
+div#section-1-gradient_id {
+    background: linear-gradient(#076DFF,#a7c3ef);
+}
+
+div.box {
+    text-align: center; /*will go in and apply to children*/
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+    margin :10px;
+    padding: 10px 10px 20px 10px;
+    border-radius: 7px;
+    
+}
+
+dic.icon {
+    width :100%;
+}
+.leftside-col {
+    margin-left: 30%;
+}
+
+.rightside-col {
+    margin-left :15%;    
+}
+
+h1.large {
+    color : #fff;
+    font-size: 3rem;
+    margin :0;
+    line-height : 1.2;
+}
+
+h1.section2Header {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1;
+}
+
+form h2 {
+    color :#fff;
+}
+
+input[type="text"]{
+    font-size: 1.3rem;
+    width: 400px;
+    min-width: 100px;
+    padding :5px;
+    border-radius: 10pt;
+}
+
+.videoContainer iframe{
+    position :relative;
+    width :100%;
+    margin :0%;
+    overflow :hidden;
+    
+}
+
+.footerImg {
+    width :250px;
+    height: auto;
+    margin :auto;
+    display: block;
+    box-shadow:  -2px/*Horiz*/ -2px/*verti*/ 5px/*blur*/ 2px/*spread*/ rgba(0 /*shadow*/, 0/*background,0/*box*/,.15/*opacity*/);
+    padding :3px;    
+    
+}
+
+footer.footer1{
+    background-color: #666;
+}
+
+footer.footer1 h1{
+    color: #fff;
+    font-size: 2rem;
+}
+
+footer.footer1 ul /*this drills down to li element*/ {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footer1 li {
+    color :#fff;
+    font-size: 1.5;
+    line-height: 1.5;
+}
+
+footer_spacer {
+    display :block;
+    width :40px;
+    height :40px;
+}
+
+footer.footer1 div.col-3 {
+    padding-left: 10px;
+}
+/*######Mobile #######*/
+
+@media screen and (max-width :680px){
+    ul.topnav li:not(:nth-child(1)){
+        display :none;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display :block;
+        float :right;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon {
+        position :absolute;
+        top :0;
+        right :0;
+    }
+    
+    ul.topnav.responsive {
+        position : relative;
+    }
+    
+    ul.topnav.responsive li {
+        display :inline;
+        float :none;
+    }
+    
+    ul.topnav.responsive li a {
+        display : block;
+        text-align: left;
+    }
+    
+    h1.section2Header {
+    font-size:3rem;
+    }
+    
+    article p {
+    font-size: 1rem;
+    line-height: 1;
+    padding :2px;
+    }
+    
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4
+    {
+        width:100%;
+        margin:0;
+    }
+    
+    div.mobilestack {
+        width :50%;
+        display:block;
+    }
+    
+    div.box {
+        padding :5px;
+        display: block;
+    }
+    div.leftside-col , div.rightside-col {
+        margin: 15px;
+    }
+    
+    input[type="text"]{
+        width :95%;
+    }
+}
+
+
+

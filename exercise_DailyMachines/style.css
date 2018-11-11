@@ -1,0 +1,47 @@
+body {
+    
+    background-color: #cc99ff;
+}
+h1 {
+    color :aqua;
+}
+
+h2 {
+    color :chocolate;
+    text-align: center;
+    text-shadow :2px 2px 5px black ;
+}
+
+.square {
+    width : 100px;
+    height: 100px;
+    background-color: gray;
+    margin:auto
+    
+}
+
+.serv-container {
+     background-image: linear-gradient(to right bottom,orange, green);
+}
+
+.punch-text {
+    border-bottom-style: dotted;
+    border-bottom-color: darkolivegreen;
+    border-width: 2px;
+    text-shadow: 3px 3px 3px blue;
+    
+}
+
+body ul > li {
+    color : purple;
+    font-size: 35px
+}
+
+ul li {
+    color :darkcyan;
+    font-size: 30px;
+    font-family:sans-serif;
+    line-height: 2rem;
+    
+}
+

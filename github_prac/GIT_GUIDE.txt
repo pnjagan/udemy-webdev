@@ -1,0 +1,168 @@
+Installing - Git-2.19.1-64-bit.exe for windows
+Select below options:
+---------------------------
+use git from git bash only
+use the OpenSSL library
+checkout win style and checkin unix style
+MINTTY
+Select only file system cache
+
+Created a new folder and touched a file called README.md and added content
+git init
+git status
+
+git add README.md
+
+git commit -m "first commit"
+
+git status  //nothing to commit
+//commit often
+
+vim README.md
+
+//changes not committed
+
+git add code.js
+
+git add README.md // adding changes
+
+git add -A // adds all changes and new untracked files
+
+git commit -m "modified readme and code file"
+
+git status
+
+git log //shows the log but user is sathiyans , corrected by "git config --global user.email <email>" and "git config user.name <name>"
+
+git checkout <0a9c8a6 -first 7 digits>
+
+/*
+srirama@srirama-PC MINGW64 /d/work/git_fun (master)
+$ git checkout 0a9c8a6
+Note: checking out '0a9c8a6'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 0a9c8a6 first commit
+*/
+
+git status //will show the repo as having dettached from HEAD
+
+git checkout master //it will checkout back master working-files
+
+git branch //shows all the branches
+
+//commit often , but dont commit bugs or trash - commit good code as much as possible
+
+//"git add -A" and "git add ." both do the samething , add -A will remove files that are to be removed , add . does not do that i guess
+//its always better to do 'git add -A'
+
+//there are 2 common repos - github , bitbucket
+//github is free for public repos but gives no free private repos
+//bitbucket gives 5 free private repos as well
+==========================
+generating a ssh key:
+
+ssh-keygen -t rsa -b 4096 -C "pnjagan@gmail.com" // passphrase is "github" - cant get simpler than that
+
+start the ssl agent:
+
+eval $(ssh-agent -s)
+
+Adding a new SSH key to your GitHub account
+=========================================
+C:\Users\srirama\.ssh\id_rsa.pub to clip using notepad++ or command "clip < ~/.ssh/id_rsa.pub"
+---
+paste this is settings->SSH keys in github website to configure it in github and we are done.
+===========================================
+ git remote add origin git@github.com:pnjagan/git-fun.git //Add a remote repository called "origin" to this local repo
+
+/*------------
+Check the added repos:
+
+ $ git remote -v
+origin  git@github.com:pnjagan/git-fun.git (fetch)
+origin  git@github.com:pnjagan/git-fun.git (push)
+------------------------------------*/
+
+created a file on github server
+------
+git pull origin master // to get from remote (called origin in our case) - its combination of 2 commands - fetch and merge
+-------------------------------------
+-----
+git push -u origin master //push to remote repo called "origin" , the branch called "master" with some upstream references ( -u is not required)
+--------------------------------------------
+
+PULL and then PUSH is the normal flow
+
+--->we will have merges when we PULL and then PUSH
+
+conflict resolution in GitHub
+===============================
+taken a new copy of git-fun from remote
+
+D:\work\git_fun2
+
+git remote add origin git@github.com:pnjagan/git-fun.git
+
+git status
+
+------------------------
+both have exactly same code now..
+---------------------
+now changing git_fun - HELLO.txt
+************************************
+OLD: var count_x_init=150;//this is the x init value
+NEW: var count_x_init=200;//this is the x init value
+
+then "git status" ,then "git add -A" , then ' git commit -m "x from 150 to 200" ' then "git push -u origin master"
+
+now changing git_fun2 - HELLO.txt
+*****************************
+OLD: var count_x_init=150;//this is the x init value
+NEW: var count_x_init=250;//this is the x init value
+
+then "git status" ,then "git add -A" , then ' git commit -m "x from 150 to 250" ' 
+
+then "git pull origin master"
+
+pull failed due to merge failure (pull = fetch + merge)
+
+-----------------------------------------
+$git pull origin master
+Enter passphrase for key '/c/Users/srirama/.ssh/id_rsa':
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:pnjagan/git-fun
+ * branch            master     -> FETCH_HEAD
+   d2e44dd..b80adba  master     -> origin/master
+Auto-merging HELLO.txt
+CONFLICT (content): Merge conflict in HELLO.txt
+Automatic merge failed; fix conflicts and then commit the result.
+---------------------------------------------------
+How the conflict looks like on th actual file 
+
+<<<<<<< HEAD
+var count_x_init=250;//this is the x init value
+=======
+var count_x_init=200;//this is the x init value
+>>>>>>> b80adbaf1e01d5769cae32dfaa1d7e4a6344400e
+
+go ahead and remove all marks and put the code u want to to be , say 225 and then commit it back to main :-)
+then push it back to server
+
+then let git_fun pull the latest data:
+---------------
+CONFLICT resolved
+ 
+ 

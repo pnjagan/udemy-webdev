@@ -1,0 +1,30 @@
+div.red_box , div.green_box , div.blue_box {
+    width :100px;
+    height: 100px;    
+/*    float :left;  */
+    display :inline-block;
+/*    vertical-align: top;*/
+/*    overflow: hidden;*/
+}
+
+div.red_box {
+    background-color: red;
+}
+
+div.green_box {
+    background-color: green;
+}
+
+div.blue_box {
+    background-color: blue;
+}
+
+body {
+/*    display :inline;*/
+}
+
+/*
+p.text {
+    display :inline;
+    margin :40px;
+}*/

@@ -1,0 +1,55 @@
+body.sign-in-body {
+    background-color: azure;
+}
+
+.container.signin-container {
+    margin-top: 8%;
+}
+
+.card.signin-card {
+    padding: 20px 10px;
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    
+}
+
+
+.margin-auto {
+/*    align-content: center;*/
+    margin: auto;
+/*
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+*/
+/*    display: block;*/
+}
+
+img.signin-img {
+    padding :0 2rem 2rem;
+    margin :auto;
+    display:block;
+/*    width :45%;*/
+
+}
+
+form.signin-form {
+    max-width: 350px;
+    margin :auto;
+}
+
+button.signin-btn {
+    color : #ffffff;
+    background-color: #d54829;
+    width :100%;
+    margin-bottom: 1.2rem;
+}
+
+.create-new-account {
+    margin :15px 0 0 0;
+    display :block;
+/*    padding :10px 0 0 0;*/
+    text-align: center;
+/*    color : blue;*/
+    font-size: 1.2rem;
+}

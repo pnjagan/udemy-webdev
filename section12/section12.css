@@ -1,0 +1,360 @@
+/****************NAV and Gen HTML rendering ENDs ***************/
+html , body {
+    font-family: "Verdana" , "Arial";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height :20px;
+    font-size: 1rem;
+    color:#303137;
+    margin:0;
+    background-color: burlywood;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.navItems {
+    display: flex;
+    margin: 0 10px 0 0;
+    padding: 0;
+    list-style: none;
+    
+/*
+    flex-basis: 50%;
+    justify-content: flex-end;
+*/
+/*    align-self: flex-end;*/
+}
+
+ul.navItems li a.navlink{
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+div.brand {
+    color: #555555;
+    margin-left: 20px;
+/*
+    flex-basis: 20%;
+    justify-content: flex-start;
+*/
+}
+
+div.brand span.brand_sense {
+    color :green;
+}
+
+/*
+div.navWrap {
+    display: flex;
+}*/
+
+.brand , .brand_sense , .navlink {
+    text-transform: uppercase;
+}
+
+.dropdownLink a {
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.dropdownLink {
+    display:none;
+}
+/****************NAV and Gen HTML rendering ENDs ***************/
+
+/*******************PROFILE related classes - START ************/
+header.profileBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img.profImg {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+div.profName {
+    font-size: 1.5rem;
+    color: dodgerblue;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/*******************PROFILE related classes - ENDs ************/
+
+
+/************************SERVICE RELATEd CLASS STARTS *************/
+.services {
+    background-color: darkgrey;
+    padding : 40px;
+}
+
+.serv_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.media-object {
+    display:flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 1px;
+    border-color: coral;
+}
+
+
+.left-img-wrapper , .left-text-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 50%;
+    order :1;
+}
+
+.right-img-wrapper , .right-text-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis :50%;
+    order :2;
+}
+
+
+.img-icon {
+    width :150px;
+    max-width: 100%;
+    padding:20px;
+/*
+    display: block;
+    text-align: right;
+*/
+/*    margin: auto;*/
+}
+
+.blurb_wrap {
+    display :block;
+}
+
+
+
+.get-a-quote {
+    display:flex;
+    flex-basis: 100%;
+    justify-content: center;
+    
+    padding :20px 0 0 0;
+}
+
+.quoteBtn{
+    display: block;
+/*    margin: auto;*/
+    background-color: gainsboro;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding :3px;
+}
+/************************SERVICE RELATEd CLASS ENDs *************/
+
+/***************  port folio item - STARTS   *************/
+.PF_container {
+    display :flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+/*    flex-basis: 25%;*/
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolio-text {
+    padding :10px;
+}
+img.PPimg {
+    max-width: 100%;
+    margin : 10px 0 0 20px;
+}
+
+img.PPimg:hover {
+    transform: scale(1.2);
+}
+
+.portfolio-hdr {
+    margin :10px 0 0 0;
+}
+
+
+.PPTitle {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    background: #cccccc;
+}
+
+/************port folio item - ENDS***************/
+
+
+/***********CONTACT section STARTS***********************/
+.contact-section {
+    background-color: aliceblue;
+}
+
+.contact-title {
+    margin :0px 0 0 0px;
+    text-align: center;
+    padding: 10px 0 15px 0px;
+    
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+/*    justify-content: center;*/
+    align-items: center;
+/*    max-width: 100%;*/
+}
+
+.inputForm {
+    display :flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    max-width: 90%;
+    
+/*    padding: 0 0 0 30px;*/
+}
+
+form.inputForm input {
+    width :200px;
+    margin :0px 0 10px 0px;
+    max-width: 90%;
+}
+
+form.inputForm textarea {
+    width :300px;
+    height : 100px;
+    margin :0px 0 10px 0px;
+    max-width: 90%;
+}
+
+form.inputForm button {
+    margin :0px 0 10px 0px;
+    width : 150px;
+    height: 1.7rem;
+    border-radius: 4px;
+    background-color: cornflowerblue;
+    color: white;
+    max-width: 100%;
+}
+
+
+/***********CONTACT section ENDs***********************/
+
+@media (max-width : 575px){
+    
+.media-object {
+    display:flex;
+    flex-direction: column;
+}
+
+    
+.left-img-wrapper , .right-img-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;   
+    order :1;
+}
+
+ .left-text-wrapper , .right-text-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;   
+    order :2;
+}
+    
+    .blurbHdr , .blurb-info {
+        text-align: center;
+    }
+    
+    
+
+/*
+.left-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;    
+}
+
+.right-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis :100%;
+}
+*/
+
+    
+}
+
+
+@media (max-width : 767px) {
+    
+/***** NAV link related items - START *****/
+    a.navlink {
+        display :none;
+    }
+    
+    .dropdownLink {
+        display :block;
+        position: absolute;
+        top: 15px;
+        right : 20px;
+    }
+    
+    .responsive {
+        flex-direction: column;
+    }
+    
+    
+    ul.navItems.responsive li {
+        position: relative;
+        top: 30px;
+        right: 0px;
+    }
+
+    ul.navItems.responsive li.dropdownLink {
+        display :block;
+        position: absolute;
+        top: 15px;
+        right : 20px;
+    }
+    
+    ul.navItems.responsive li a.navlink {
+        display :block;
+        text-align: right;
+        margin :5px 0 0 0;
+    }
+/***** NAV link related items - ENDS ***/
+    
+}
+

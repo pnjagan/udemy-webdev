@@ -1,0 +1,25 @@
+li  {
+    color :green;
+    
+}
+
+ul > li {
+    
+    color:red
+}
+
+div.parent > h2 {
+    color : purple
+}
+
+div.parent div > h2 {
+    color : pink
+}
+
+html body div > h3 {
+    color : greenyellow
+}
+
+h1 , h3 , h4 , p {
+    color:fuchsia
+}

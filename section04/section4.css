@@ -1,0 +1,113 @@
+html {
+    
+/*    text-align: center;*/
+    background-color: pink;
+}
+h1 , h2 , h3 {
+    background-color: azure;
+    color:green;
+    font-size: 2rem;
+}
+
+p {
+    
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.h3-1 {
+    
+    text-align: center;
+    font-family: 'Indie+Flower' ,serif,sans-serif ;
+    font-style: normal;
+}
+
+.h3-2 {
+    text-align: left;
+    font-style: italic;
+    font-family: 'Open+Sans+Condensed:300' ,serif,sans-serif ;
+}
+
+.h3-3 {
+    
+    font-style: oblique;
+    text-align: right;
+    font-family: 'Srisakdi' ,serif,sans-serif ;
+}
+
+.formatting{
+    font-size: 2rem;
+    line-height : 2rem;
+    color:aqua;
+}
+
+a {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: blueviolet;
+    word-spacing: 30px;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    padding :5px;
+}
+
+.rama_img {
+    
+/*    border: 10px dashed red;*/
+/*border-radius : 30px;*/
+border-radius : 25%;
+width: 170px;
+/*height: 100px;*/
+border :2px solid #ddd;
+padding : 5px;
+/*opacity: 50%; */
+display:block;
+margin :auto;
+}
+
+.padding {
+    color:brown;
+    background-color: antiquewhite;
+    border-radius: 10px;
+/*    border :none;*/
+    font-size: 15px;
+    padding :10px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row::after {
+ display:block;
+ clear :both;
+ content : "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+    border :2px solid red;
+    padding :15px;
+    float :left;
+}

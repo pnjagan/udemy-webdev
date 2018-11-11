@@ -1,0 +1,3 @@
+srirama jayarama jaya jaya rama
+var count_x_init=225;//this is the x init value
+var count_y_init=200;//this is the y init value

@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+  <title>Section 5 - CSS Website</title>
+  <link rel="stylesheet" href="section5.css"/>
+</head>
+    
+<body>
+<nav>
+<ul class="topnav" id="dropdownClick">
+<li><a href="#home">Home</a></li>
+<li><a href="#news">News</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#about">About</a></li>
+<li  class="topnav-right"><a href="#signup">Sign Up</a></li>
+<li  class="topnav-right"><a href="#signin">Sign In</a></li>
+<li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu();">&#9776;</a><!-- its called a trigram -->
+    <!-- this type of menu is called Hamburger Menu -->
+    </li>
+</ul>
+</nav>
+
+<div class="container" id="section-1-gradient_id">
+    <div class="row">
+        <div class="col-6">
+             <div class="leftside-col">
+          <h1 class="large">   Crazy Radness </h1>
+          <h1 class="large">   Made for devslopers </h1>
+                </div>
+
+        <form>
+        <div class="leftside-col">
+          <h2>Username</h2>
+            <input class="inputbox" name="username" type="text" placeholder="username"/>
+          <h2>Password</h2>
+            <input class="inputbox" name="password" type="text" placeholder="password"/>
+        </div>
+        </form>
+         </div>
+        
+        <div class="col-6">
+            <div class="rightside-col">
+                <div class="videoContainer">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sgrTxvHmWxg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+                </div>
+        </div>
+</div>
+</div>
+    
+    <header>
+    <h1 class="section2Header">Standards of awesomeness</h1>
+    </header>
+    
+    <div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="baa.png" />
+                </div>
+                <label>Chat with me</label>
+<!--                https://www.lipsum.com/-->
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                </p>
+            </div>
+        
+        </div>
+
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="baa.png" />
+                </div>
+                <label>Learn to code</label>
+<!--                https://www.lipsum.com/-->
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                </p>
+            </div>
+        
+        </div>
+        
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="baa.png" />
+                </div>
+                <label>Build an empire</label>
+<!--                https://www.lipsum.com/-->
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                </p>
+            </div>
+        
+        </div>        
+    </div>
+    
+    <div class="row">
+    <div class="col-12">
+      <button class="learnmore">Learn more</button>
+    </div>
+    </div>
+    </div>
+    <hr />
+    
+    <div class="container">
+    <div class="row">
+        <div class="col-7">
+    <article>
+    <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+    </p>
+    </article>
+            </div>
+        <div class="col-5">
+        <div>
+        <img src="baa.png" class="footerImg"/>
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer1">
+    <div class="row">
+
+        <div class="col-3 mobilestack">
+            <h1>Company</h1>
+            <ul>
+            <li>About</li>
+            <li>Blogs</li>
+            <li>Careers</li>
+            </ul>
+        </div>
+        
+        <div class="col-3 mobilestack">
+            <h1>Company</h1>
+            <ul>
+            <li>About</li>
+            <li>Blogs</li>
+            <li>Careers</li>
+            </ul>
+        </div>
+
+        
+        <div class="col-3 mobilestack">
+            <h1>Company</h1>
+            <ul>
+            <li>About</li>
+            <li>Blogs</li>
+            <li>Careers</li>
+            </ul>
+        </div>
+
+        <div class="col-3 mobilestack">
+            <h1>Company</h1>
+            <ul>
+            <li>About</li>
+            <li>Blogs</li>
+            <li>Careers</li>
+            </ul>
+        </div>
+        
+        </div>
+    </footer>
+    
+<!-- embedded javascript is not good practise but doing only to understand the concepts -->
+<script>
+
+function dropdownMenu(){
+  var x = document.getElementById("dropdownClick");
+  if(x.className == "topnav"){
+    x.className += " responsive";
+  } else {;
+    x.className = "topnav";   
+  }
+
+}
+
+</script>
+    
+</body>
+</html>

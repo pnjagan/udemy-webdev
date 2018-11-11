@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calculators</title>
+</head>
+<body>
+    <h1>Calculators</h1>
+    
+    <select id="calculatorSelect">
+        <option value="NoSelection">Select an option</option>
+        <option value="y_percent_of_x">What is Y% of X?</option>
+        <option value="x_is_y_percent_of_what">X is Y% of what? </option>
+        <option value="what_percent_of_x_is_y">What % of X is Y? </option>
+        <option value="x_percent_of_what_is_y">X% of what is Y?  </option>
+        <option value="y_percent_of_x_is_what">Y% of X is what? </option>
+    </select>
+    <br /> <br />
+<!--    <p>X is what percentage of Y</p>-->
+    <FORM id="xypercent_form">
+        Input X <input type="text" id="numField1" />
+        <br /> <br />
+        input Y <input type="text" id="numField2"/>
+        <br />
+        <br />
+        <input type="submit" value="calculate" />
+		
+
+
+    </FORM>
+    <h3 id="resultField">Result: 100%</h3>
+    
+    <script type="text/javascript" src="calc.js" >
+    </script>
+</body>
+</html>

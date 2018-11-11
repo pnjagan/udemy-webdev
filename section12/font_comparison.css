@@ -1,0 +1,41 @@
+body div {
+    margin :20px 5px;
+    border :1px;
+    border-bottom-style: solid;
+    border-color: purple;
+}
+
+.font-arial{
+    font-family: "arial";
+/*    font :"arial";*/
+}
+
+.font-verdana{
+    font-family: "verdana";
+/*    font :"verdana";*/
+}
+
+
+.font-helvetica{
+    font-family: "Helvetica-Normal";
+/*    font :"helvetica";*/
+}
+
+
+
+
+.font-timesroman{
+/*    font-family: serif;*/
+    font-family:"Times New Roman";
+}
+
+
+
+.font-ncourier{
+/*    font-family: monospace;*/
+    font-family :"Courier New";
+}
+
+div {
+    font-size: 1.5rem;
+}
